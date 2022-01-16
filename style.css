@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    font-family: 'Open Sans';
+    font-size: 0.5vw;
+    background-color: #202020;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+}
+
+a {
+    color: darkgrey;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+a:visited {
+    color: gray;
+}
+
+.headerContainer {
+    background-color: #303030;
+    text-align: center;
+    font-size: 2rem;
+    height: max-content;
+}
+
+.headerContainer .headerText {
+    padding: 1rem;
+    margin: 0;
+}
+
+.navBar {
+    height: max-content;
+    background-color: #242424;
+    border-bottom: solid black 0.25rem;
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+.navBar .navItem {
+    user-select: none;
+    margin: 1rem;
+    padding: 2rem;
+    font-size: 2rem;
+    background-color: #131313;
+    transition: filter 0.25s, transform 0.25s, box-shaddow 0.25s, border-radius 0.25s;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: currentColor;
+    font-style: normal;
+}
+
+.navBar .navItem:first-child {
+    background-color: #0c6900;
+}
+
+.navBar .navItem:last-child {
+    background-color: #690000;
+    margin-left: auto;
+}
+
+.navBar .navItem:hover {
+    filter: brightness(1.5);
+    transform: scale(1.1);
+    box-shadow: 0.5rem 0.5rem 5px black;
+    border-radius: 10px;
+}
+
+.InformationContainer {
+    margin-top: 1rem;
+    width: 100vw;
+}
+
+.InformationContainer .InformationItem {
+    display: block;
+    background-color: #303030;
+    height: max-content;
+    width: 90%;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
